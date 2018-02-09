@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+#### How to Calculate Monthly Repayment for a Loan
+
+To calculate the monthly repayment value for a loan call the following class method:
+
+```ruby
+HomeLoan::Loan.calculate_monthly_repayment(repayment_type, interest_rate, loan_amount, period=360, iop=0, future_value=0, type=0)
+```
 
 ## Development
 

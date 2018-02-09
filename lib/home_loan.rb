@@ -3,12 +3,8 @@ require "home_loan/version"
 module HomeLoan
   class Loan
 
-    # rt - loan repayment type
-    # interest_rate - interest rate per annun
-    # loan_amount - loan amount
     # period - number of periods (months)
     # interest_only_period - interest only period (years)
-    # fv - future value
     # type - when the payments are due:
     #  0: end of the period, e.g. end of month (default)
     #  1: beginning of period
@@ -34,4 +30,7 @@ module HomeLoan
     end
 
   end
+
+
+
 end
