@@ -6,8 +6,8 @@ require "home_loan/version"
 Gem::Specification.new do |spec|
   spec.name          = "home_loan"
   spec.version       = HomeLoan::VERSION
-  spec.authors       = ["Andre Possebom"]
-  spec.email         = ["andre@loandolphin.com.au"]
+  spec.authors       = ["Andre Possebom", "Pedro Pereira Santos", "Rod Dutra"]
+  spec.email         = ["andre@loandolphin.com.au", "pedro@loandolphin.com.au", "rod@loandolphin.com.au"]
 
   spec.summary       = %q{This gem contains home loan functions.}
   spec.description   = %q{HomeLoan library contains a couple of useful functions for home loans.}
