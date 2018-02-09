@@ -1,0 +1,6 @@
+min_value,max_value,threshold,tax_over_threshold,tax_per_dollar_over_threshold,medicare_levy_percentage
+0,18200,0,0,0,2
+18201,37000,18200,0,0.19,2
+37001,87000,37000,3572,0.325,2
+87001,180000,87000,19822,0.37,2
+180001,1000000000000,180000,54232,0.45,2
