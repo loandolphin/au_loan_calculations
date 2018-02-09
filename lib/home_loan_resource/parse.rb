@@ -1,4 +1,4 @@
-module HomeLoan
+module HomeLoanResource
   class Parse
 
     # the amount to be converted.

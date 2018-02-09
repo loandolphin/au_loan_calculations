@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    home_loan (0.1.0)
+    home_loan_resource (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -27,7 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.16)
-  home_loan!
+  home_loan_resource!
   rake (~> 10.0)
   rspec (~> 3.0)
 

@@ -1,5 +1,5 @@
-RSpec.describe HomeLoan::Loan do
-  
+RSpec.describe HomeLoanResource::Loan do
+
   describe '.calculate_monthly_repayment' do
     let(:loan_amount) { 400000 }
     let(:interest_rate) { 7.75 }
@@ -9,7 +9,7 @@ RSpec.describe HomeLoan::Loan do
       let(:repayment_type) { "principal_and_interest" }
 
       it 'results in $2,865.65' do
-        result = HomeLoan::Loan.calculate_monthly_repayment(
+        result = HomeLoanResource::Loan.calculate_monthly_repayment(
           repayment_type,
           interest_rate,
           loan_amount
@@ -25,7 +25,7 @@ RSpec.describe HomeLoan::Loan do
       let(:interest_only_period) { 2 }
 
       it 'results in $2,918.95' do
-        result = HomeLoan::Loan.calculate_monthly_repayment(
+        result = HomeLoanResource::Loan.calculate_monthly_repayment(
           repayment_type,
           interest_rate,
           loan_amount,

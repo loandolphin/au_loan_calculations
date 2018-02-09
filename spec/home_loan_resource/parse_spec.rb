@@ -1,7 +1,7 @@
-RSpec.describe HomeLoan::Parse do
+RSpec.describe HomeLoanResource::Parse do
 
   describe '.convert_amount' do
-    let(:value) { HomeLoan::Parse.convert_amount(amount, frequency, convert_to) }
+    let(:value) { HomeLoanResource::Parse.convert_amount(amount, frequency, convert_to) }
 
     context 'when convert an amount to weekly' do
       let(:convert_to) { 'weekly' }

@@ -1,7 +1,7 @@
 require 'date'
 require 'csv'
 
-module HomeLoan
+module HomeLoanResource
   class Income
 
     def self.calculate_payg_net_value(value, year=Date.today.year)
@@ -32,7 +32,7 @@ module HomeLoan
         end
 
       rescue Errno::ENOENT
-        raise HomeLoan::Exception::AssetNotFoundError, "Unable to find the income tax rates for #{year}."
+        raise HomeLoanResource::Exception::AssetNotFoundError, "Unable to find the income tax rates for #{year}."
       end
     end
 

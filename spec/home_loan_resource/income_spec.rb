@@ -1,11 +1,11 @@
-RSpec.describe HomeLoan::Income do
+RSpec.describe HomeLoanResource::Income do
 
   describe '.calculate_payg_net_value' do
 
     context 'when CSV file does not exist' do
       it 'raises an exception' do
-        expect { HomeLoan::Income.calculate_payg_net_value(80000, 2010) }
-          .to raise_error(HomeLoan::Exception::AssetNotFoundError)
+        expect { HomeLoanResource::Income.calculate_payg_net_value(80000, 2010) }
+          .to raise_error(HomeLoanResource::Exception::AssetNotFoundError)
           .with_message("Unable to find the income tax rates for 2010.")
       end
     end
@@ -14,7 +14,7 @@ RSpec.describe HomeLoan::Income do
       context 'when do not pass the year' do
         context 'when $80,000/yearly' do
           it 'returns $60,853/yearly' do
-            value = HomeLoan::Income.calculate_payg_net_value(80000)
+            value = HomeLoanResource::Income.calculate_payg_net_value(80000)
             expect(value).to eql(60853.0)
           end
         end
@@ -23,7 +23,7 @@ RSpec.describe HomeLoan::Income do
       context 'when passes the year' do
         context 'when $5,000/monthly' do
           it 'returns $47,753/yearly' do
-            value = HomeLoan::Income.calculate_payg_net_value(60000, 2018)
+            value = HomeLoanResource::Income.calculate_payg_net_value(60000, 2018)
             expect(value).to eql(47753.0)
           end
         end
