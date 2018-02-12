@@ -6,8 +6,12 @@ module HomeLoanResource
 
     def self.calculate_payg_net_value(value, year=Date.today.year)
       begin
-        income_tax_rates_file = CSV.read("vendor/assets/csvs/payg_tax_rates/#{year.to_s}.csv", { headers: true })
+        # income_tax_rates_file = CSV.read("vendor/assets/csvs/payg_tax_rates/#{year.to_s}.csv", { headers: true })
+        gem_path ||= File.expand_path '..', File.dirname(__FILE__)
+        assets_path ||= File.join gem_path, "../assets"
+        file = File.join assets_path, "csvs/payg_tax_rates/#{year.to_s}.csv"
 
+        income_tax_rates_file = CSV.read(file, { headers: true })
 
         income_tax_rates_file.each do |income_tax_rate|
 
