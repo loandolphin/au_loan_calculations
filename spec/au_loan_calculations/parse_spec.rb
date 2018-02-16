@@ -1,7 +1,7 @@
-RSpec.describe AuLoanCalculation::Parse do
+RSpec.describe AuLoanCalculations::Parse do
 
   describe '.convert_amount' do
-    let(:value) { AuLoanCalculation::Parse.convert_amount(amount, frequency, convert_to) }
+    let(:value) { AuLoanCalculations::Parse.convert_amount(amount, frequency, convert_to) }
 
     context 'when convert an amount to weekly' do
       let(:convert_to) { 'weekly' }

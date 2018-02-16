@@ -5,12 +5,12 @@ require "au_loan_calculations/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "au_loan_calculations"
-  spec.version       = AuLoanCalculation::VERSION
+  spec.version       = AuLoanCalculations::VERSION
   spec.authors       = ["Andre Possebom", "Pedro Pereira Santos", "Rod Dutra"]
   spec.email         = ["andre@loandolphin.com.au", "pedro@loandolphin.com.au", "rod@loandolphin.com.au"]
 
   spec.summary       = %q{This gem contains home loan functions for Australian market.}
-  spec.description   = %q{AuLoanCalculation library contains a couple of useful functions for Austrlian home loans.}
+  spec.description   = %q{AuLoanCalculations library contains a couple of useful functions for Austrlian home loans.}
   spec.homepage      = "https://github.com/possebom/au_loan_calculations_gem"
   spec.license       = "MIT"
 

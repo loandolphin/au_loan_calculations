@@ -1,7 +1,7 @@
 require 'date'
 require 'csv'
 
-module AuLoanCalculation
+module AuLoanCalculations
   class Income
 
     def self.calculate_payg_net_value(value, year=Date.today.year)
@@ -36,7 +36,7 @@ module AuLoanCalculation
         end
 
       rescue Errno::ENOENT
-        raise AuLoanCalculation::Exception::AssetNotFoundError, "Unable to find the income tax rates for #{year}."
+        raise AuLoanCalculations::Exception::AssetNotFoundError, "Unable to find the income tax rates for #{year}."
       end
     end
 

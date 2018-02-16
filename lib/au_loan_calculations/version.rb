@@ -1,3 +1,3 @@
-module AuLoanCalculation
+module AuLoanCalculations
   VERSION = "0.1.4"
 end

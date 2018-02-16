@@ -1,4 +1,4 @@
-RSpec.describe AuLoanCalculation::Loan do
+RSpec.describe AuLoanCalculations::Loan do
 
   describe '.calculate_monthly_repayment' do
     let(:loan_amount) { 400000 }
@@ -9,7 +9,7 @@ RSpec.describe AuLoanCalculation::Loan do
       let(:repayment_type) { "principal_and_interest" }
 
       it 'results in $2,865.65' do
-        result = AuLoanCalculation::Loan.calculate_monthly_repayment(
+        result = AuLoanCalculations::Loan.calculate_monthly_repayment(
           repayment_type,
           interest_rate,
           loan_amount
@@ -25,7 +25,7 @@ RSpec.describe AuLoanCalculation::Loan do
       let(:interest_only_period) { 2 }
 
       it 'results in $2,918.95' do
-        result = AuLoanCalculation::Loan.calculate_monthly_repayment(
+        result = AuLoanCalculations::Loan.calculate_monthly_repayment(
           repayment_type,
           interest_rate,
           loan_amount,

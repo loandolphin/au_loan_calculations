@@ -5,6 +5,6 @@ require "au_loan_calculations/loan"
 require "au_loan_calculations/parse"
 require "au_loan_calculations/income"
 
-module AuLoanCalculation
+module AuLoanCalculations
 
 end

@@ -1,4 +1,4 @@
-module AuLoanCalculation
+module AuLoanCalculations
   class Parse
 
     # the amount to be converted.
