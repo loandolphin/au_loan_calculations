@@ -1,5 +1,5 @@
-RSpec.describe HomeLoanResource do
+RSpec.describe AuLoanCalculation do
   it "has a version number" do
-    expect(HomeLoanResource::VERSION).not_to be nil
+    expect(AuLoanCalculation::VERSION).not_to be nil
   end
 end

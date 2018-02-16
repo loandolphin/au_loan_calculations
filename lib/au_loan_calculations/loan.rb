@@ -1,4 +1,4 @@
-module HomeLoanResource
+module AuLoanCalculation
   class Loan
 
     # period - number of periods (months)

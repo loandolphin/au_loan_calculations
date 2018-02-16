@@ -1,4 +1,4 @@
-module HomeLoanResource
+module AuLoanCalculation
   module Exception
     class AssetNotFoundError < StandardError
       def initialize(msg = 'Asset not found')

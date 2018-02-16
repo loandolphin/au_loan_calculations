@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    home_loan_resource (0.1.4)
+    au_loan_calculations (0.1.4)
 
 GEM
   remote: https://rubygems.org/
@@ -26,8 +26,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  au_loan_calculations!
   bundler (~> 1.16)
-  home_loan_resource!
   rake (~> 10.0)
   rspec (~> 3.0)
 

@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "home_loan_resource/version"
+require "au_loan_calculations/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "home_loan_resource"
-  spec.version       = HomeLoanResource::VERSION
+  spec.name          = "au_loan_calculations"
+  spec.version       = AuLoanCalculation::VERSION
   spec.authors       = ["Andre Possebom", "Pedro Pereira Santos", "Rod Dutra"]
   spec.email         = ["andre@loandolphin.com.au", "pedro@loandolphin.com.au", "rod@loandolphin.com.au"]
 
   spec.summary       = %q{This gem contains home loan functions for Australian market.}
-  spec.description   = %q{HomeLoanResource library contains a couple of useful functions for Austrlian home loans.}
-  spec.homepage      = "https://github.com/possebom/home_loan_resource_gem"
+  spec.description   = %q{AuLoanCalculation library contains a couple of useful functions for Austrlian home loans.}
+  spec.homepage      = "https://github.com/possebom/au_loan_calculations_gem"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

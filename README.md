@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'home_loan_resource'
+gem 'au_loan_calculations'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install home_loan_resource
+    $ gem install au_loan_calculations
 
 ## Usage
 
@@ -27,7 +27,7 @@ Or install it yourself as:
 To calculate the monthly repayment value for a loan call the following class method:
 
 ```ruby
-HomeLoanResource::Loan.calculate_monthly_repayment(repayment_type, interest_rate, loan_amount, period=360, iop=0, future_value=0, type=0)
+AuLoanCalculation::Loan.calculate_monthly_repayment(repayment_type, interest_rate, loan_amount, period=360, iop=0, future_value=0, type=0)
 ```
 
 #### How to convert an amount frequency
@@ -35,7 +35,7 @@ HomeLoanResource::Loan.calculate_monthly_repayment(repayment_type, interest_rate
 Convert an amount to other frequency:
 
 ```ruby
-HomeLoanResource::Parse.convert_amount(amount, frequency, convert_to)
+AuLoanCalculation::Parse.convert_amount(amount, frequency, convert_to)
 ```
 The allowed values for **frequency** and **convert_to** are: `weekly`, `fortnightly`, `monthly` and `yearly`.
 
@@ -45,7 +45,7 @@ The allowed values for **frequency** and **convert_to** are: `weekly`, `fortnigh
 To calculate the PAYG NET income value call the class method:
 
 ```ruby
-HomeLoanResource::Income.calculate_payg_net_value(value, year*)
+AuLoanCalculation::Income.calculate_payg_net_value(value, year*)
 ```
 
 The `year` parameter is optional. Its default value is the current year.

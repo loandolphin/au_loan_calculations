@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "home_loan_resource"
+require "au_loan_calculations"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
